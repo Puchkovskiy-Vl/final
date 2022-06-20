@@ -1,0 +1,179 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Lato, sans-serif;
+  background-color: #2d303a;
+}
+
+/* Header */
+
+.logo {
+  margin-left: 20px;
+}
+
+.logo-image {
+  width: 160px;
+}
+
+header {
+  background-color: #2d303a;
+  height: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.menu {
+  color: white;
+  font-size: 12px;
+}
+
+.navigation {
+  margin-right: 40px;
+}
+
+li.nav-item {
+  display: inline;
+  cursor: pointer;
+}
+
+li.nav-item:hover {
+  color: #fcd3b3;
+}
+
+li.nav-item::after {
+  content: "·";
+  font-weight: 700;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+li.nav-item:last-child::after {
+  content: none;
+}
+
+/* Consultation */
+
+.consultation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #989ba9;
+  background-image: url(assets/consultation.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  padding: 160px 30px;
+}
+
+.consultation-description {
+  width: 70%;
+  text-align: center;
+  color: #2d303a;
+  padding: 20px 40px;
+}
+
+.order {
+  margin-top: 20px;
+  height: 60px;
+  background-color: #2d303abf;
+  box-shadow: 4px 4px #2d303a2e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.order:hover {
+    background-color: #2d303ac2;
+    border: 1px solid #767e9e;
+}
+
+/* Services */
+
+.services {
+  background-color: #f2f2f2;
+  padding: 20px 30px;
+}
+
+.services-title {
+  color: #666d89;
+  font-size: 30px;
+}
+
+.services-description {
+  font-size: 18px;
+  color: #767e9e;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service {
+  display: flex;
+  width: 33.3%;
+  margin: 0 20px 20px 0;
+  justify-content: space-between;
+}
+
+.service-icon {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.service-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.service-name {
+  color: #666d89;
+  font-size: 18px;
+}
+
+.service-content {
+  width: 220px;
+}
+
+.service-description {
+  color: #767e9e;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  height: 76px;
+  background-color: #2d303a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  color: #666d89;
+  font-size: 13px;
+  line-height: 18px;
+  margin-left: 40px;
+}
+
+.social-buttons {
+  margin-right: 42px;
+}
+
+.social-buttons a {
+  color: aliceblue;
+  text-decoration: none;
+}
