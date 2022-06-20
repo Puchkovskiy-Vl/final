@@ -209,6 +209,10 @@ footer {
   box-shadow: 5px 4px #00000017;
 }
 
+.article-icon img{
+  width: 200px;
+}
+
 .service-description a, .contact-details h4 a {
   color: #2d303a;
 }
