@@ -5,6 +5,16 @@ body {
   background-color: #2d303a;
 }
 
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+}
+
 /* Header */
 
 .logo {
@@ -38,7 +48,7 @@ li.nav-item {
   cursor: pointer;
 }
 
-li.nav-item:hover {
+li.nav-item a:hover {
   color: #fcd3b3;
 }
 
@@ -89,8 +99,8 @@ li.nav-item:last-child::after {
 }
 
 .order:hover {
-    background-color: #2d303ac2;
-    border: 1px solid #767e9e;
+  background-color: #2d303ac2;
+  border: 1px solid #767e9e;
 }
 
 /* Services */
@@ -116,6 +126,7 @@ li.nav-item:last-child::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 100px;
 }
 
 .service {
@@ -173,7 +184,120 @@ footer {
   margin-right: 42px;
 }
 
-.social-buttons a {
+/* Articles */
+
+.page-title {
+  background-color: #f2f2f2;
+  padding: 20px 30px;
+  margin: 0;
+}
+
+.articles {
+  background-color: #f2f2f2;
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article {
+  width: 450px;
+  margin: 40px 20px;
+  padding: 20px;
+  border: 1px solid #767e9e;
+  border-radius: 10px;
+  box-shadow: 5px 4px #00000017;
+}
+
+.service-description a, .contact-details h4 a {
+  color: #2d303a;
+}
+
+.service-description a:hover, .contact-details h4 a:hover  {
+  color: #2e313a8c;
+}
+
+/* Contacts */
+
+.contacts {
+  background-color: #f2f2f2;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+}
+
+.photo {
+  margin-right: 50px;
+}
+
+.photo img {
+  width: 500px;
+}
+
+.social-ico {
+  width: 30px;
+  margin-right: 20px;
+}
+
+/* Help */
+
+.help {
+  background-color: #f2f2f2;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.consultation-help {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #989ba9;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(assets/consultation.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  padding: 100px 30px;
+}
+
+.consultation-help h3 {
   color: aliceblue;
-  text-decoration: none;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details img {
+  margin-left: 5%;
+}
+
+.mentions { 
+  width: 35%;
+  margin-right: 20px;
+}
+
+.symptoms {
+  margin-bottom: 20px;
+}
+
+/* About */
+
+.about {
+  background-color: #f2f2f2;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
 }
