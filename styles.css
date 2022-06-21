@@ -209,16 +209,18 @@ footer {
   box-shadow: 5px 4px #00000017;
 }
 
-.article-icon img{
-  width: 200px;
+.article-icon img {
+  height: 200px;
 }
 
-.service-description a, .contact-details h4 a {
+.service-description a,
+.contact-details h4 a {
   color: #2d303a;
 }
 
-.service-description a:hover, .contact-details h4 a:hover  {
-  color: #2e313a8c;
+.service-description a:hover,
+.contact-details h4 a:hover {
+  color: #9a9a9a8c;
 }
 
 /* Contacts */
@@ -262,7 +264,8 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #989ba9;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(assets/consultation.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/consultation.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -277,6 +280,13 @@ footer {
 .details {
   display: flex;
   flex-direction: column;
+  font-weight: 900;
+  animation: openclose 10s ease-in-out infinite;
+  position: absolute;
+  margin: 25px 40px;
+  height: 150px;
+  display: block;
+  position: absolute;
 }
 
 .details div {
@@ -288,13 +298,36 @@ footer {
   margin-left: 5%;
 }
 
-.mentions { 
-  width: 35%;
+.mentions {
+  /* width: 35%; */
   margin-right: 20px;
 }
 
 .symptoms {
   margin-bottom: 20px;
+}
+
+.consultation-acro {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: #989ba9;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/acro.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 30px;
+  color: aliceblue;
+  height: 300px;
+}
+
+.animation {
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+  width: 100%;
 }
 
 /* About */
@@ -304,4 +337,45 @@ footer {
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0;
+    width: 395px;
+  }
+  25% {
+    top: 0;
+    width: 395px;
+  }
+  35% {
+    top: -320px;
+    width: 395px;
+  }
+  70% {
+    top: -320px;
+    width: 395px;
+  }
+  80% {
+    top: -600px;
+    width: 395px;
+  }
+  95% {
+    top: -600px;
+    width: 395px;
+  }
+  100% {
+    top: 0;
+    width: 395px;
+  }
+  /* 50% {
+    width: 400px;
+  }
+  70% {
+    top: -790px;
+    width: 0;
+  }
+  85% {
+    width: 400px;
+  } */
 }
